@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_TdpHnIUXvSLfiVmJREhtz");
+        })();
+    </script>
+</head>
+<body>
+    <div id="head" class="container">
+        <div id="headtext">
+            <p id="mainText"></p>
+        </div>
+        <div id="navigation">
+            <ul id="navigationList">
+                <li id='aboutLink'></li>
+                <li id="projectsLink"></li>
+                <li id="educationLink"></li>
+                <li id="contactsLink"></li>
+            </ul>
+        </div>
+        <div id="input">
+           <p id="userText"></p>
+            <p id="userInput"></p>
+        </div>
+        <div id="invalidContainer">
+            <p id="invalidMessage"></p>
+        </div>
+    </div>
+    
+    <div id="container">
+    <div id="about" class="container">
+        <div id="topPar">
+            <div id="aboutImage">
+                <img src="aboutImage.jpg" id="aboutimage">
+            </div>
+            <div id="aboutPar1">
+                
+            </div>
+        </div>
+        <div id="aboutPar2">
+            
+        </div>
+        <div id="skillsContainer">
+            <div>
+                <div class='skillsTitle'>
+                    <p id="skills1Title"></p>
+                </div>
+                <div class="skills" id="skills1">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="skillsTitle">
+                     <p id="skills2Title"></p>
+                </div>
+                <div class="skills" id="skills2">
+                    
+                </div>
+            </div>
+            <div>
+                <div class="skillsTitle">
+                     <p id="skills3Title"></p>
+                </div>
+                <div class="skills" id="skills3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="projects">
+        <div id="projectsMainTextContainer">
+            <p id="projectsText"></p>
+        </div>
+        <div id="projectlist">
+            <div class="project">
+                <div class="projectImageContainer" id="project1Img">
+                </div>
+                <div id="projectTextContainer1" class="projectTextContainers">
+                    <p class='projectTitle' id='projectTitle1'></p>
+                    <a class="projectLinkToSite" href="https://mystifying-ptolemy-07674a.netlify.app/" target="_blank"></a>
+                    <a class="projectLinkToGit" href='https://github.com/igorkuprijanov/spancerlandscape' target="_blank"></a>
+                    <p class="projectText" id="projectText1"></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectImageContainer" id="project2Img">
+                </div>
+                <div id="projectTextContainer2" class="projectTextContainers">
+                    <p class='projectTitle'></p>
+                    <a class="projectLinkToSite" href="https://musing-aryabhata-7cf8c4.netlify.app/" target="_blank"></a>
+                    <a class="projectLinkToGit" href='https://github.com/igorkuprijanov/restolandingpage' target="_blank"></a>
+                    <p class="projectText"></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectImageContainer" id="project3Img">
+                </div>
+                <div id="projectTextContainer3" class="projectTextContainers">
+                    <p class='projectTitle'></p>
+                    <a class="projectLinkToSite" href="https://blissful-tereshkova-7f1062.netlify.app/" target="_blank"></a>
+                    <a class="projectLinkToGit" href='https://github.com/igorkuprijanov/solitaire' target="_blank"></a>
+                    <p class="projectText" ></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectImageContainer" id="project4Img">
+                </div>
+                <div id="projectTextContainer4" class="projectTextContainers">
+                    <p class='projectTitle'></p>
+                    <a class="projectLinkToSite" href="https://peaceful-wiles-bb8787.netlify.app/" target="_blank"></a>
+                    <a class="projectLinkToGit" href='https://github.com/igorkuprijanov/nova' target="_blank"></a>
+                    <p class="projectText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="education">
+        <div id="educationContainer">
+            <div id="eduPar1">
+                <p id="eduPar1text"></p>
+            </div>
+            <div id="eduPar2">
+                <p id="eduPar2text1"></p>
+                <a id="ffcLink" href="https://www.freecodecamp.org/" target="_blank"></a>
+                <p id="eduPar2text2"></p>
+            </div>
+            <div id="eduImgContainer">
+               <div id="eduImgTop">
+                <div class="eduImage">
+                    <div id="cerfificateContainer0"></div>
+                </div>
+                <div class="eduImage">
+                     <div id="cerfificateContainer1"></div>
+                </div>
+                </div>
+                <div id="eduImgBot">
+                <div class="eduImage">
+                     <div id="cerfificateContainer2"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contacts">
+        <div id="contactsConteiner">
+            <div id='contactsTextContainer'>
+                <p id="contactsPar1"></p>
+                <p id="contactsPar2"></p>
+            </div>
+            <div id="formContainer">
+                <form id="form" onsubmit="formSubmit(event)">
+                    <input type="hidden" name="contact_number">
+                    <input class="formInput" id="nameInput" type="text" placeholder="Your name" name="user_name">
+                    <input class="formInput" id="companyInput" type="text" placeholder="Company" name="company_name">
+                    <input class="formInput" id="emailInput" type="text" placeholder="Your e-mail" name="user_email">
+                    <textarea class="formInput" id="formMessage" placeholder="Message" name="message"></textarea>
+                    <button id="formSubmitButton" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="joke">
+        <div id="jokeContainer">
+            <div><p class='jokeText' id="jokeQuestion"></p></div>
+            <div><p class='jokeText' id="jokeAnwser"></p></div>
+        </div>
+    </div>
+    
+    <div id="help">
+        <div id="helpContainer">
+            <div><p id="helpText"></p></div>
+            <div id='helpCommandList'></div>
+        </div>
+    </div>
+    
+    <div id="game">
+        <div id="gameContainer">
+           <p id="gameName">Rock Paper Scissors</p>
+            <div id="score"><p>Player: <span id="playerScore">0</span> | Computer: <span id="compScore">0</span></p></div>
+           <h1 id="gameInstruction">Choose your sign</h1>
+                <div id="gameTopContainer">
+                    <div class="gameImage"><img id='rock' class="gamePic" src="rock.svg"></div>
+                    <div class="gameImage"><img id="paper" class="gamePic" src="paper.svg"></div>
+                    <div class="gameImage"><img id="scissors" class="gamePic" src="scissors.svg"></div>
+                </div>
+        </div>
+    </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
